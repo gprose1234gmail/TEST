@@ -356,7 +356,7 @@ def playlist_markup(user_name, user_id, videoid):
     return buttons
 
 
-def (user_id, type, videoid):
+def play_genre_playlist(user_id, type, videoid):
     buttons = [
         [
             InlineKeyboardButton(

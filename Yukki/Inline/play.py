@@ -36,11 +36,9 @@ def url_markup(videoid, duration, user_id, query, query_type):
         ],
     ]
     return buttons
-
-
-def url_markup2(videoid, duration, user_id):
+  def url_markup2(videoid, duration, user_id):
     buttons = [
-        [
+         [
             InlineKeyboardButton(
                 text="🎵 Play Music",
                 callback_data=f"MusicStream {videoid}|{duration}|{user_id}",
@@ -52,9 +50,13 @@ def url_markup2(videoid, duration, user_id):
         ],
         [
             InlineKeyboardButton(
+                text="🔎 More Results",
+                callback_data=f"other {videoid}|{user_id}",
+            ),
+            InlineKeyboardButton(
                 text="🗑 Close Search",
                 callback_data=f"forceclose {videoid}|{user_id}",
-            )
+            ),
         ],
     ]
     return buttons
